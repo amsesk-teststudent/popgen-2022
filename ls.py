@@ -1,6 +1,10 @@
 import os
+import sys
 
-flist = os.listdir(".")
+print(sys.argv)
+path = sys.argv[1]
+
+flist = os.listdir(path)
 
 for f in flist:
     print(f)
