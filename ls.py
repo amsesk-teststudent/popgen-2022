@@ -1,6 +1,7 @@
 import os
 import sys
 
+# Print sys.argv
 print(sys.argv)
 path = sys.argv[1]
 
