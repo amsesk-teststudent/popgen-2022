@@ -1,9 +1,11 @@
 import os
-import sys
+import argparse
 
-# Print sys.argv
-print(sys.argv)
-path = sys.argv[1]
+parser = argparse.ArgumentParser()
+parser.add_argument("path", store = "action", default = ".", help = "The path you would like to list.")
+parser.parse_args()
+
+path = args.path
 
 flist = os.listdir(path)
 
